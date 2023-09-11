@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +8,15 @@
 }
 
 html {
-    background-color: rgb(126, 123, 123);
 }
 
 body {
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    min-height: 100vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
 }
 
 .header {
-    background-color: hsla(0, 0%, 100%, 0.853);
 }
 
 ul {
@@ -26,11 +25,11 @@ ul {
 
 a {
     text-decoration: none;
-    color:rgba(0, 0, 0, 0.974);
 }
 
 nav {
-    border: 2px solid rgb(7, 7, 7);
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .nav_list {
@@ -42,24 +41,31 @@ nav {
     min-height: 50px;
 }
 
+li{
+    min-height: 50px;
+}
+
 .nav_link {
-    padding: 0px 5px;
-    padding: 20px;
+    padding: 0px 10px;
+    padding-bottom: 2px;
+    color:rgba(0, 0, 0, 0.774);
+    font-family:'Open Sans';
+    /*padding: 20px;
     display: inline-block;
     font-stretch:50%;
-    transition: 0.5s ease
+    transition: 0.5s ease*/
 }
+
+.nav_link:hover{  
+    border-bottom: 2px solid black; 
+    color:rgb(0, 0, 0);
+}
+
 main {
-    border: 2px solid rgb(7, 7, 7);
-    background-color: hsla(0, 0%, 100%, 0.853);
-    height: 800px;
 }
 
 .nav_item:hover {
-    background-color: rgb(206, 203, 203);
 }
 
 .logo {
-    min-height: 200px;
-    border: 2px solid rgb(7, 7, 7);
 }
