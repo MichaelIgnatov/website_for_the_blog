@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
-@import url("https://fonts.fontstorage.com/import/marckscript.css");
 @import url("https://fonts.fontstorage.com/import/nautilus.css");
-@import url("https://fonts.fontstorage.com/import/alexander.css");
-@import url("https://fonts.fontstorage.com/import/pecita.css");
 @import url("https://fonts.fontstorage.com/import/sweetmavkascript.css");
 
 * {
@@ -19,35 +16,49 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     width: 70%;
+    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
+    /*background: linear-gradient(45deg, #EECFBA, #C5DDE8);*/
+    /*background: linear-gradient(to top left, powderblue, pink);*/
+    /*background: radial-gradient(at top, #FEFFFF, #A7CECC);*/
+    /*background: linear-gradient(66deg, #e38010, #1535bf);*/
+    /*background: linear-gradient(to right, #020080, #00f, #020080);*/
+    background-image: linear-gradient(to right, #bbb7b7, #ffffff); 
 }
-
 
 ul {
     list-style: none;
+    margin: 0px 0px;
 }
 
 p {
     margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .site-title {
     font-size: 112px;
-    /*font-family: 'Marck Script';*/
     /*font-family: 'Nautilus Pompilius';*/
-    /*font-family: 'Alexander';*/
-    /*font-family: 'Pecita';*/
     font-family: 'Sweet Mavka Script';
 }
 
 .site-description {
-    width: 284px;
-    margin: -5px 0 0;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.26rem;
     color: #9d9d9d;
     text-transform: uppercase;
-    text-align: right;
-    margin: -10px 0 0;
+    position: relative;
+    left: 100px;
+    bottom: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
 
 h1 {
@@ -58,18 +69,21 @@ h1 {
 }
 
 h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 h3 {
     margin-top: 10px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 h4 {
     margin-top: 10px;
-    margin-bottom: 15px 
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 nav {
@@ -96,6 +110,7 @@ li{
     padding-bottom: 2px;
     color:rgba(0, 0, 0, 0.774);
     font-family:'Open Sans';
+    text-wrap: nowrap;
 }
 
 .nav_link:hover{  
@@ -109,22 +124,67 @@ li{
 }
 
 .flexible_container {
+    margin-top: 15px;
     display:flex;
     flex-direction: row;
     justify-content:baseline;
 }
 
+.expansion {
+    justify-content: start;
+}
+
+.left-container {
+    width: 50%;
+}
+
+.right-container {
+    width: 50%
+}
+
+.left-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .blogs_list {
     padding-top: 10px;
-    padding-bottom: 10px;
-} 
+}
+
+.blogs_list li {
+    margin-bottom: -15px;
+}
+
+.useful_links {
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.useful_link {
+    margin-bottom: -15px;
+}
 
 .indentation_element {
     margin-left: 50px;
+    margin-top: 10px;
+}
+
+.indentation_element p {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .figure {
     padding-top: 15px;
+    text-align: center;
 }
 
 figcaption{
@@ -169,6 +229,10 @@ figcaption{
     box-shadow: 0 8px 12px rgba(0,0,0,0.3);
     background: linear-gradient(0deg, #ddd, #fff);
     transition: .5s;
+    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
+    /*background: linear-gradient(45deg, #EECFBA, #C5DDE8);*/
+    /*background: linear-gradient(to top left, powderblue, pink);*/
+    /*background: radial-gradient(at top, #FEFFFF, #A7CECC);*/
 }
 .social-icons li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
@@ -191,24 +255,9 @@ figcaption{
     color: #337AB7;
 }
 
-.header {
-}
-
 .footer {
-    margin-top: 35px;
-}
-
-.useful_links {
-}
-
-main {
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 25px;
+    margin-top: 55px;
+    margin-bottom: 30px;
 }
 
 .vk_reels {
@@ -223,7 +272,30 @@ main {
     margin-right: auto
 }
 
-img {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.vertical-alignment {
+    vertical-align: middle;
+}
+
+.vertical-alignment-img {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.background-design {
+    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
+    /*background: linear-gradient(45deg, #EECFBA, #C5DDE8);*/
+    /*background: linear-gradient(to top left, powderblue, pink);*/
+}
+
+.picture-on-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
