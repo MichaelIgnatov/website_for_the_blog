@@ -2,6 +2,8 @@
 @import url("https://fonts.fontstorage.com/import/nautilus.css");
 @import url("https://fonts.fontstorage.com/import/sweetmavkascript.css");
 
+/* https://www.w3schools.com/CSS/css3_images.asp можно что-то использовать для дизайна изображенний*/
+
 * {
     margin: 0;
     padding: 0;
@@ -30,17 +32,32 @@ ul {
     margin: 0px 0px;
 }
 
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.link-design {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.link-design:hover {
+    border-bottom: 1px solid black; 
+    color:rgba(0, 0, 0, 0.774);
+}
+
 p {
     margin-bottom: 10px;
     line-height: 1.6;
     text-align: left;
     margin-left: 15%;
     margin-right: 15%;
+    /*color: #5d5d5d;*/
 }
 
 .site-title {
     font-size: 112px;
-    /*font-family: 'Nautilus Pompilius';*/
     font-family: 'Sweet Mavka Script';
 }
 
@@ -217,6 +234,7 @@ figcaption{
     position: relative;
 }
 .social-icons li a {
+    border-bottom: none;
     width: 60px;
     height: 60px;
     display: inline-block;
@@ -229,10 +247,7 @@ figcaption{
     box-shadow: 0 8px 12px rgba(0,0,0,0.3);
     background: linear-gradient(0deg, #ddd, #fff);
     transition: .5s;
-    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
-    /*background: linear-gradient(45deg, #EECFBA, #C5DDE8);*/
-    /*background: linear-gradient(to top left, powderblue, pink);*/
-    /*background: radial-gradient(at top, #FEFFFF, #A7CECC);*/
+    background-image: linear-gradient(to right, #bbb7b7, #ffffff); 
 }
 .social-icons li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
@@ -286,12 +301,6 @@ figcaption{
     font-weight: bold;
 }
 
-.background-design {
-    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
-    /*background: linear-gradient(45deg, #EECFBA, #C5DDE8);*/
-    /*background: linear-gradient(to top left, powderblue, pink);*/
-}
-
 .picture-on-center {
     display: block;
     margin-left: auto;
@@ -299,3 +308,26 @@ figcaption{
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+/*.caption-shadow {
+    position: relative;
+    border: 5px solid #FAAB1B;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .caption-shadow img {
+    display: block;
+  }
+  .caption-shadow figcaption {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background: #FAAB1B;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 -10px 20px -5px hsla(0, 0%, 0%, .4);
+  } */
