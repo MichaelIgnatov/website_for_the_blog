@@ -2,8 +2,6 @@
 @import url("https://fonts.fontstorage.com/import/nautilus.css");
 @import url("https://fonts.fontstorage.com/import/sweetmavkascript.css");
 
-/* https://www.w3schools.com/CSS/css3_images.asp можно что-то использовать для дизайна изображенний*/
-
 * {
     margin: 0;
     padding: 0;
@@ -16,25 +14,12 @@ html {
 
 body {
     margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
-    /*background: linear-gradient(45deg, #EECFBA, #C5DDE8);*/
-    /*background: linear-gradient(to top left, powderblue, pink);*/
-    /*background: radial-gradient(at top, #FEFFFF, #A7CECC);*/
-    /*background: linear-gradient(66deg, #e38010, #1535bf);*/
-    /*background: linear-gradient(to right, #020080, #00f, #020080);*/
-    background-image: linear-gradient(to right, #bbb7b7, #ffffff); 
+    margin-right: 15%; 
 }
 
 ul {
     list-style: none;
     margin: 0px 0px;
-}
-
-img {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5), 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .link-design {
@@ -51,9 +36,6 @@ p {
     margin-bottom: 10px;
     line-height: 1.6;
     text-align: left;
-    margin-left: 15%;
-    margin-right: 15%;
-    /*color: #5d5d5d;*/
 }
 
 .site-title {
@@ -81,8 +63,6 @@ p {
 h1 {
     display: block;
     text-align: center;
-    /*margin-top: 15px;
-    margin-bottom: 15px;*/
 }
 
 h2 {
@@ -117,7 +97,7 @@ nav {
     min-height: 50px;
 }
 
-li{
+li {
     min-height: 50px;
 }
 
@@ -138,74 +118,24 @@ li{
 .block_container {
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flexible_container {
-    margin-top: 15px;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content:baseline;
+    justify-content: space-around;
 }
 
-.expansion {
-    justify-content: start;
-}
-
-.left-container {
-    width: 50%;
-}
-
-.right-container {
-    width: 50%
-}
-
-.left-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.right-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.blogs_list {
-    padding-top: 10px;
-}
-
-.blogs_list li {
-    margin-bottom: -15px;
-}
-
-.useful_links {
+.flexible_container h3 {
     text-align: left;
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
-.useful_link {
-    margin-bottom: -15px;
-}
-
-.indentation_element {
-    margin-left: 50px;
-    margin-top: 10px;
-}
-
-.indentation_element p {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.figure {
-    padding-top: 15px;
-    text-align: center;
-}
-
-figcaption{
-    margin-top: 5px;
+.center-img {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .fa-vk {
@@ -271,63 +201,47 @@ figcaption{
 }
 
 .footer {
-    margin-top: 55px;
-    margin-bottom: 30px;
-}
-
-.vk_reels {
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-
-.link_vk_reels {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.vertical-alignment {
-    vertical-align: middle;
-}
-
-.vertical-alignment-img {
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 80px;
+    margin-bottom: 35px;
 }
 
 .bold-text {
     font-weight: bold;
 }
 
-.picture-on-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.parting-words {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/*.caption-shadow {
-    position: relative;
-    border: 5px solid #FAAB1B;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  .caption-shadow img {
-    display: block;
-  }
-  .caption-shadow figcaption {
-    padding: 10px;
-    color: white;
+.indentation_element {
+    margin-left: 7%;
+}
+
+.central-text-elem {
     text-align: center;
-    text-transform: uppercase;
-    background: #FAAB1B;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    box-shadow: 0 -10px 20px -5px hsla(0, 0%, 0%, .4);
-  } */
+    font-size: 20px;
+}
+
+.centarl-text-elem-container {
+    margin-top: 40px;
+    margin-bottom: -25px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexible-wrap {
+    flex-wrap: wrap;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure {
+    margin-bottom: 15   px;
+}
