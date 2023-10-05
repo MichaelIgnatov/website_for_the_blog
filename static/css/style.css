@@ -17,6 +17,10 @@ body {
     margin-right: 15%; 
 }
 
+img {
+    border-radius: 8px;
+}
+
 ul {
     list-style: none;
     margin: 0px 0px;
@@ -63,6 +67,11 @@ p {
 h1 {
     display: block;
     text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
 }
 
 h2 {
@@ -243,5 +252,33 @@ figcaption {
 }
 
 figure {
-    margin-bottom: 15   px;
+    margin-bottom: 15px;
+}
+
+.blog-list {
+    text-align: center;
+}
+
+.blogs-elem-1 {
+    position: relative;
+}
+
+.blogs-elem-2 {
+    position: relative;
+    left: 70px
+}
+
+.blogs-elem-3 {
+    position: relative;
+    right: 70px
+}
+
+.blogs-elem-4 {
+    position: relative;
+    bottom: 100px;
+}
+
+.blogs-elem-5 {
+    position: relative;
+    bottom: 100px;
 }
